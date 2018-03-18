@@ -68,3 +68,6 @@ EcuadorIdValidationException
 #### Built With (Desarrollado con)
 
 .NET Standard 2.0
+
+### Icon
+Icon by https://icons8.com/
