@@ -23,7 +23,7 @@ Install the package through Nuget package manager or command line:
 *Instale el paquete por medio del administrador de paquetes de Nuget ó por medio de la linea de comando:*
 
 ```
-Install-Package ecuador.id.validator -Version 1.0.0
+Install-Package ecuador.id.validator -Version 1.0.3
 ```
 
 [ecuador.id.validator Nuget Package](https://www.nuget.org/packages/ecuador.id.validator/) 
@@ -63,6 +63,17 @@ If the validation fails, an exception is thrown.
 
 ```
 EcuadorIdValidationException
+```
+
+To avoid wrapping the validation in a try-catch, call the boolean function.
+
+*Llame a la función booleana para evitar el uso de try-catch*
+
+```
+  var document = "1234567890";
+  if(document.IsDocumentValid())
+  {
+  }
 ```
 
 #### Built With (Desarrollado con)
