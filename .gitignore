@@ -1,0 +1,7 @@
+.vs/
+ecuador.id.validator/bin/
+*.user
+ecuador.id.validator/obj/
+ecuador.id.validatorTests/bin/
+ecuador.id.validatorTests/obj/
+packages/

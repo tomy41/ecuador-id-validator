@@ -6,16 +6,6 @@ Validates Cedula and different types of RUC as a string extension.
 
 ------------
 
-### Important (Importante)
-
-Don't forget to donate to keep mantaining this package updated and bugs free.
-
-*No olvides donar fondos para mantener este paquete actualizado y libre de bugs.*
-
-[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FTFYBE7RV4ZS4)
-
-------------
-
 #### Getting Started (Preparándose)
 
 Install the package through Nuget package manager or command line:
@@ -23,7 +13,7 @@ Install the package through Nuget package manager or command line:
 *Instale el paquete por medio del administrador de paquetes de Nuget ó por medio de la linea de comando:*
 
 ```
-Install-Package ecuador.id.validator -Version 1.0.3
+Install-Package ecuador.id.validator -Version 2.0.0
 ```
 
 [ecuador.id.validator Nuget Package](https://www.nuget.org/packages/ecuador.id.validator/) 
@@ -55,6 +45,7 @@ If the validation is successful a `DocumentType` is returned.
   DocumentType.RUC_Juridico;
   DocumentType.RUC_Natural;
   DocumentType.RUC_Publico;
+  DocumentType.Consumidor_Final;
 ```
 
 If the validation fails, an exception is thrown.
@@ -75,7 +66,16 @@ To avoid wrapping the validation in a try-catch, call the boolean function.
   {
   }
 ```
+You can also use the try-get function as a combination of the previous functions.
 
+*También puede usar la función try-get como combinación de las anteriores funciones*
+
+```
+  var document = "1234567890";
+  if(EcuadorIdValidator.TryGetDocumentType(document, out DocumentType? resultType))
+  {
+  }
+```
 #### Built With (Desarrollado con)
 
 .NET Standard 2.0

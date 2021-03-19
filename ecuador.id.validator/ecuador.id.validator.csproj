@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Tomás Aguirre</Authors>
+    <Company />
+    <Title>Ecuador ID Validator</Title>
+    <Product>Ecuador ID Validator</Product>
+    <Description>Validates Cédula, RUC natural, RUC público and RUC jurídico</Description>
+    <Copyright>2019</Copyright>
+    <PackageProjectUrl>https://github.com/tomy41/ecuador-id-validator</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tomy41/ecuador-id-validator</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageReleaseNotes>Fixes bugs in Ruc Publicos.
+Added TryGetDocumentType</PackageReleaseNotes>
+    <PackageIconUrl></PackageIconUrl>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <Version>2.0.0</Version>
+    <PackageTags>ecuador cedula ruc</PackageTags>
+    <FileVersion>2.0.0.0</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
